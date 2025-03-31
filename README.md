@@ -68,18 +68,37 @@ text
 The application will be available at `http://localhost:3000`.
 
 ## Project Structure
-
 international-weather-app/
-├── public/ # Static files
-│ ├── locales/ # Translation files
-│ └── index.html # HTML template
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── locales/
+│       ├── en/
+│       │   └── translation.json
+│       ├── fr/
+│       │   └── translation.json
+│       └── jp/
+│           └── translation.json
 ├── src/
-│ ├── components/ # React components
-│ ├── contexts/ # Context providers
-│ ├── utils/ # Utility functions
-│ ├── App.jsx # Main application component
-│ └── index.jsx # Application entry point
-└── package.json # Project dependencies
+│   ├── components/
+│   │   ├── WeatherDisplay.jsx
+│   │   ├── LocaleSwitcher.jsx
+│   │   ├── SearchBar.jsx
+│   │   ├── WeatherDetails.jsx
+│   │   ├── ErrorMessage.jsx
+│   │   └── LoadingIndicator.jsx
+│   ├── contexts/
+│   │   └── WeatherContext.jsx
+│   ├── utils/
+│   │   ├── i18n.js
+│   │   ├── api.js
+│   │   ├── dateFormatter.js
+│   │   └── temperatureConverter.js
+│   ├── App.jsx
+│   └── index.jsx
+├── package.json
+└── README.md
+
 
 text
 
